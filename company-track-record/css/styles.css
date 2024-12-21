@@ -1,0 +1,77 @@
+:root {
+  --header-height: 3.5rem;
+  --first-color: #f5f5f5;
+  --first-color-alt: #e0e0e0;
+  --title-color: hsl(210, 10%, 20%);
+  --text-color: hsl(210, 10%, 40%);
+  --text-color-light: hsl(210, 10%, 60%);
+  --body-color: #ffffff;
+  --container-color: #f0f0f0;
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: .938rem;
+  --biggest-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --font-medium: 500;
+  --font-black: 900;
+  --mb-1: 1rem;
+}
+
+/* Base styles */
+body {
+  font-family: var(--body-font);
+  background: var(--body-color);
+  color: var(--text-color);
+  margin: var(--header-height) 0 0 0;
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-black);
+}
+
+.container {
+  max-width: 968px;
+  margin: 0 auto;
+  padding: var(--mb-1);
+}
+
+/* Track Record Section */
+.track-record {
+  padding: 2rem 0;
+}
+
+.track-record__title {
+  font-size: var(--biggest-font-size);
+  margin-bottom: var(--mb-1);
+  text-align: center;
+}
+
+.track-record__milestones,
+.track-record__achievements,
+.track-record__testimonials {
+  margin-bottom: var(--mb-2);
+}
+
+.track-record__item {
+  background: var(--first-color);
+  border-radius: .5rem;
+  padding: 1rem;
+  margin-bottom: var(--mb-1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.track-record__item-title {
+  font-weight: var(--font-medium);
+  margin-bottom: .5rem;
+}
+
+.track-record__item-description {
+  color: var(--text-color-light);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .track-record__title {
+    font-size: var(--h2-font-size);
+  }
+}
