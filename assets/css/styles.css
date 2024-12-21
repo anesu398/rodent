@@ -257,6 +257,7 @@ button{
 /*=============== HOME ===============*/
 .home__content{
   row-gap: 1rem;
+  padding-top: 4rem;
 }
 
 .home__group{
