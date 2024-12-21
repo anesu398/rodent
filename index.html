@@ -15,6 +15,7 @@
 
         <!--=============== CSS ===============--> 
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/button.css">
 
         <title> Rodent, Inc. </title>
     </head>
@@ -269,10 +270,57 @@
                     <img src="assets/img/discount-img.png" alt="" class="discount__img">
                 </div>
             </section>
-
+                <div class="gallery">
+                    <h2 class="section__title">Recent Projects</h2>
+                    <div class="filters">
+                        <button class="filter-button active" data-filter="all">All</button>
+                        <button class="filter-button" data-filter="web">Web</button>
+                        <button class="filter-button" data-filter="android">Android</button>
+                        <button class="filter-button" data-filter="ios">iOS</button>
+                        <button class="filter-button" data-filter="api">API</button>
+                    </div>
+                    <div class="projects">
+                        <div class="project" data-category="web">
+                            <img src="./assets/img/shedsense.PNG" alt="Web Project">
+                            <div class="overlay">
+                                <a href="#" target="_blank">Live Demo</a>
+                                <a href="#" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project" data-category="android">
+                            <img src="./assets/img/WhatsApp Image 2024-12-21 at 09.38.31.jpeg" alt="Android Project">
+                            <div class="overlay">
+                                <a href="#" target="_blank">Live Demo</a>
+                                <a href="#" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project" data-category="ios">
+                            <img src="./assets/img/safde.PNG" alt="Web Project">
+                            <div class="overlay">
+                                <a href="#" target="_blank">Live Demo</a>
+                                <a href="#" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project" data-category="api">
+                            <img src="./assets/img/api.PNG" alt="API Project">
+                            <div class="overlay">
+                                <a href="#" target="_blank">Live Demo</a>
+                                <a href="#" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="project" data-category="web">
+                            <img src="./assets/img/feel.PNG" alt="Web Project">
+                            <div class="overlay">
+                                <a href="https://feelathome.vercel.app/" target="_blank">Live Demo</a>
+                                <a href="#" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
             <!--==================== NEW ARRIVALS ====================-->
             <section class="section new" id="new">
-                <h2 class="section__title">Recent Projects</h2>
+                <h2 class="section__title">Our Store</h2>
 
                 <div class="new__container container">
                     <div class="swiper new-swiper">
@@ -493,5 +541,6 @@
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/button.js"></script>
     </body>
 </html>
